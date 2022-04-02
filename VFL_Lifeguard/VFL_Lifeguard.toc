@@ -1,0 +1,6 @@
+## Interface: 30200
+## Title: |c007ffcffVFL|r - Lifeguard
+## Notes: Protects VFL's frame pools from external addons.
+## Author: The VFL Project
+## Version: 1.0.0
+Lifeguard.lua

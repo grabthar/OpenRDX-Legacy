@@ -1,0 +1,15 @@
+## Interface: 30000
+## Title: RDX - Media Pack
+## Notes: Textures, Backdrops, Fonts, Sounds, Minimap, Button Skin
+## Author: OpenRDX
+## Version: 1.0.5
+## RequiredDeps: RDX
+RDX_mediapack.lua
+Textures.lua
+Backdrops.lua
+BackdropBorders.lua
+Sounds.lua
+Fonts.lua
+Minimap.lua
+ButtonSkins.lua
+Builtin.lua

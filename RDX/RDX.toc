@@ -1,0 +1,330 @@
+## Interface: 30200
+## Title: |c007ffcffRDX|r
+## Notes: RDX is Raid Data Exchange - UI and raid mods.
+## Author: Raid Informatics / OpenRDX Project
+## Version: 7.3.0
+## RequiredDeps: VFL
+## OptionalDeps: RDX_filesystem, RDX_localspelldb, RDX_combatlogs, VFL_languagepack_frFR, VFL_languagepack_deDE, VFL_languagepack_ruRU, VFL_Profiler
+## SavedVariables: RDXSession
+RDX.xml
+
+# ROOT.LUA MUST LOAD FIRST
+Root.lua
+
+# Frontend and commands
+Panels\SlashCommands.lua
+Panels\Menu.lua
+Panels\Core.lua
+Panels\MainPanel.lua
+Panels\PanelsMenu.lua
+
+# Primitives and libraries
+UI\UI.lua
+UI\SelectEmbed.lua
+UI\Wizard.lua
+UI\SpellSelector.lua
+UI\GroupClassFilter.lua
+
+# Object manager and filesystem
+ObjectMgr\ObjectDB.lua
+ObjectMgr\ObjectBrowser.lua
+ObjectMgr\NewObjectDialog.lua
+ObjectMgr\PackageMetadataDialog.lua
+ObjectMgr\ObjectSelector.lua
+ObjectMgr\ObjectState.lua
+ObjectMgr\Feature.lua
+ObjectMgr\FeatureEditor.lua
+ObjectMgr\ProxyFeature.lua
+ObjectMgr\CommentFeature.lua
+ObjectMgr\FontEditor.lua
+ObjectMgr\ObjectsMenu.lua
+ObjectMgr\PackagesUpdaterDialog.lua
+
+# Raid Data Abstraction Layer
+RDAL\Class.lua
+RDAL\Spells.lua
+RDAL\AuraTimerEngine.lua
+RDAL\Unit.lua
+RDAL\UDB.lua
+RDAL\Set.lua
+RDAL\SetFinder.lua
+RDAL\AuraSets.lua
+RDAL\NominativeSet.lua
+RDAL\Filters.lua
+RDAL\Obj_FilterSet.lua
+RDAL\Obj_NominativeSet.lua
+RDAL\Obj_VirtualSet.lua
+RDAL\FC_Logic.lua
+RDAL\FC_GroupComposition.lua
+RDAL\FC_Sets.lua
+RDAL\FC_UnitStatus.lua
+RDAL\FC_Auras.lua
+RDAL\Sort.lua
+RDAL\SortFuncs.lua
+RDAL\Obj_Sort.lua
+RDAL\Obj_SecureSort.lua
+RDAL\Target.lua
+
+# RPC
+RPC\Core.lua
+RPC\Compression.lua
+RPC\Security.lua
+RPC\CommEngine.lua
+RPC\Streams.lua
+RPC\StreamingRPC.lua
+RPC\RPC.lua
+RPC\ConfMgr.lua
+RPC\Integration.lua
+
+# Scripting
+Scripts\Scripting.lua
+Scripts\Macros.lua
+
+# Desktops
+Desktops\UITools.lua
+#Desktops\DesktopsManager.lua
+Desktops\Obj_Desktop.lua
+Desktops\Desktop.lua
+Desktops\Docks.lua
+Desktops\Layouts.lua
+Desktops\ManagedFrame.lua
+Desktops\FrameProps.lua
+Desktops\AutoSwitch.lua
+Desktops\BlizzardUI.lua
+Desktops\BlizzardFullDisable.lua
+#Desktops\Crosshair.lua
+#Desktops\DevelopmentMode.lua
+Desktops\LockUnlock.lua
+Desktops\LockUnlockKeyBindings.lua
+Desktops\ShowHide.lua
+Desktops\Others.lua
+Desktops\QuickDesktop.lua
+Desktops\Obj_ActionBindings.lua
+Desktops\Obj_KeyBindings.lua
+Desktops\Desktop_ActionBindings.lua
+Desktops\Desktop_KeyBindings.lua
+Desktops\Desktop_Basics.lua
+Desktops\Desktop_Windows.lua
+Desktops\Desktop_StatusWindows.lua
+Desktops\Desktop_WindowsLess.lua
+Desktops\Desktop_Bossmod.lua
+Desktops\Desktop_OmniLive.lua
+Desktops\Desktop_HealTarget.lua
+Desktops\Desktop_Events.lua
+Desktops\DesktopsMenu.lua
+
+# Windowing library
+Windows\Multiplexer.lua
+Windows\HeaderEngine.lua
+Windows\Obj_Window.lua
+Windows\Obj_MouseBindings.lua
+Windows\SecureMouseBindings.lua
+Windows\ClickFunctions.lua
+Windows\ClickMenu.lua
+Windows\DataEngine.lua
+Windows\Layout_Grid.lua
+Windows\Layout_HeaderGrid.lua
+Windows\Layout_SecureAssists.lua
+Windows\Layout_SingleUnitFrame.lua
+Windows\Layout_SingleArtFrame.lua
+Windows\Layout_Misc.lua
+Windows\GenericSubframe.lua
+Windows\Framing.lua
+Windows\Skein.lua
+Windows\WindowList.lua
+Windows\WindowOpenDelay.lua
+Windows\IconEditor.lua
+Windows\AuraCache.lua
+Windows\AudioCues.lua
+
+# UnitFrame system
+UnitFrames\UITools.lua
+UnitFrames\UnitFrameType.lua
+UnitFrames\Variables.lua
+UnitFrames\VariablesCheck.lua
+UnitFrames\ColorVariables.lua
+UnitFrames\UnitFrameGlue.lua
+UnitFrames\AssistFrameGlue.lua
+UnitFrames\BasicUFFeatures.lua
+UnitFrames\Hotspot.lua
+UnitFrames\Shaders.lua
+UnitFrames\Textures.lua
+UnitFrames\Text.lua
+UnitFrames\TextStatus.lua
+UnitFrames\StatusBars.lua
+UnitFrames\Highlights.lua
+UnitFrames\Obj_AuraFilter.lua
+UnitFrames\Obj_CooldownFilter.lua
+UnitFrames\Obj_SpellFilter.lua
+UnitFrames\Obj_AuraName.lua
+UnitFrames\AuraIcons.lua
+UnitFrames\AuraBars.lua
+UnitFrames\CooldownIcons.lua
+UnitFrames\Backdrops.lua
+UnitFrames\FreeTimer.lua
+UnitFrames\Portraits.lua
+UnitFrames\Icons.lua
+UnitFrames\PetSupport.lua
+UnitFrames\Combos.lua
+UnitFrames\Runes.lua
+UnitFrames\Threats.lua
+UnitFrames\UnitFramePreviewWindow.lua
+
+# ArtFrame system
+ArtFrames\ArtFrameType.lua
+ArtFrames\ArtFrameGlue.lua
+ArtFrames\BasicAFFeatures.lua
+ArtFrames\KeyBindings.lua
+ArtFrames\Textures.lua
+ArtFrames\Backdrops.lua
+ArtFrames\Minimap.lua
+ArtFrames\Button.lua
+ArtFrames\ActionBarsHandler.lua
+ArtFrames\ActionButton.lua
+ArtFrames\ActionBars.lua
+ArtFrames\ActionBarPet.lua
+ArtFrames\StanceBar.lua
+ArtFrames\OtherBars.lua
+ArtFrames\MenuBar.lua
+ArtFrames\BagsBar.lua
+ArtFrames\VehicleBar.lua
+ArtFrames\Text.lua
+ArtFrames\Variables.lua
+ArtFrames\Obj_ButtonSkin.lua
+
+# Animation System
+Animations\UITools.lua
+Animations\AnimationGroup.lua
+Animations\AnimationFrame.lua
+Animations\AnimationTexture.lua
+Animations\AnimationText.lua
+
+# Heal Synchronization system
+HealSync\Core.lua
+HealSync\HealValueEngine.lua
+HealSync\HoTTracker.lua
+Metadata\HealingSpells.lua
+HealSync\IncHealingSet.lua
+HealSync\Filters.lua
+HealSync\Features.lua
+HealSync\HealWindow.lua
+
+# Misc
+Metadata\Textures.lua
+Metadata\Sounds.lua
+
+# Class
+Metadata\Metadata_Warlock.lua
+Metadata\Metadata_Priest.lua
+Metadata\Metadata_Shaman.lua
+Metadata\Metadata_Druid.lua
+Metadata\Metadata_Paladin.lua
+Metadata\Metadata_Mage.lua
+Metadata\Metadata_Rogue.lua
+Metadata\Metadata_Warrior.lua
+Metadata\Metadata_Hunter.lua
+
+# Omniscience
+Omniscience\Omni.lua
+Omniscience\Log.lua
+# Old Parser disabled with 2.4
+# LOCALIZED PARSERS MUST BE PLACED BELOW THIS LINE
+#Omniscience\Parse_frFR.lua
+#Omniscience\Parse_deDE.lua
+# LOCALIZED PARSERS MUST BE PLACED ABOVE THIS LINE
+# Parse_enUS must load after all localized parsers.
+#Omniscience\Parse_enUS.lua
+# Generic Parser with 2.4
+Omniscience\Parse_generic.lua
+Omniscience\Parse.lua
+Omniscience\Table.lua
+Omniscience\TableViewer.lua
+Omniscience\Filter.lua
+Omniscience\Transforms.lua
+Omniscience\UI.lua
+Omniscience\Remote.lua
+Omniscience\Search.lua
+Omniscience\LiveWindow.lua
+Omniscience\Omniguid.lua
+Omniscience\OmniDB.lua
+Omniscience\Omniunit.lua
+Omniscience\OmniCooldowns.lua
+Omniscience\OmniscienceMenu.lua
+
+# Bossmod API
+Bossmods\Encounters.lua
+Bossmods\Core.lua
+Bossmods\HOT.lua
+Bossmods\MultiTrack.lua
+Bossmods\Alerts.lua
+# Dynamic Bossmods
+Bossmods\Obj_Bossmod.lua
+Bossmods\Bossmod_Basics.lua
+Bossmods\Bossmod_Events.lua
+Bossmods\Bossmod_Alerts.lua
+Bossmods\Bossmod_Windows.lua
+Bossmods\Bossmod_Auras.lua
+Bossmods\Bossmod_Hot.lua
+Bossmods\AbilityTracker.lua
+Bossmods\AbilityTrackWindow.lua
+Bossmods\BossmodMenu.lua
+
+# Omnipresence
+Omnipresence\Core.lua
+Omnipresence\LogisticsWindow.lua
+Omnipresence\Poll.lua
+Omnipresence\Inventory.lua
+Omnipresence\Durability.lua
+Omnipresence\Resists.lua
+Omnipresence\Cooldowns.lua
+Omnipresence\CharacterSheet.lua
+Omnipresence\Resurrection.lua
+Omnipresence\Totems.lua
+Omnipresence\Weapons.lua
+Omnipresence\Class.lua
+Omnipresence\Rangefinding.lua
+Omnipresence\AggroSet.lua
+Omnipresence\MTMA.lua
+Omnipresence\VOIP.lua
+Omnipresence\MASync.lua
+Omnipresence\OmnipresenceMenu.lua
+Omnipresence\RaidWindow.lua
+Omnipresence\RaidInvites.lua
+Metadata\Cooldowns.lua
+#Metadata\Totems.lua
+Metadata\WeaponsBuffs.lua
+
+# Install
+Install\Recovery.lua
+Install\OOBE.lua
+Install\OOBEMenu.lua
+
+# Raid Status
+RaidStatus\Obj_Status.lua
+RaidStatus\Quantities.lua
+RaidStatus\StatWindow.lua
+
+# Debug
+Debug\Module.lua
+Debug\SetDebugger.lua
+Debug\CompilerCache.lua
+Debug\AuraCache.lua
+Debug\LocalSpellDB.lua
+Debug\DebugMenu.lua
+
+# Windows Wizard
+WindowWizard\WindowWizard.lua
+
+# Integration with others Addons
+#Integration\SharedMedia_Integration.lua
+Integration\LibHealcomm_Integration.lua
+#Integration\SWStats_Integration.lua
+
+# More Misc stuff
+Version.lua
+
+# Factory settings
+Builtin.lua
+
+# INIT.LUA MUST LOAD LAST
+Init.lua

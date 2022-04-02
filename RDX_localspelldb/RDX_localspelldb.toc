@@ -1,0 +1,8 @@
+## Interface: 30200
+## Title: |c007ffcffRDX|r - Local Spell DB
+## Notes: store local spell name with id for localization
+## Author: Sigg / Rashgarroth
+## Version: 1.0.0
+## RequiredDeps: VFL
+## SavedVariables: RDXLocalSpellDB
+RDX_localspelldb.lua

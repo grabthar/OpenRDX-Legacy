@@ -1,0 +1,11 @@
+## Interface: 30100
+## Title: VFL Localization frFR
+## Notes: Add frFR language pack
+## Author: Sigg Rashgarroth eu
+## Version: 1.0.3
+## RequiredDeps: VFL
+init.lua
+locale.frFR.lua
+spell.frFR.lua
+
+

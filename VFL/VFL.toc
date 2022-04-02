@@ -1,0 +1,89 @@
+## Interface: 30200
+## Title: |c007ffcffVFL|r
+## Notes: VFL is a set of reusable UI elements, objects, and functions designed to accelerate UI mod development.
+## Author: The VFL Project
+## Version: 7.1.8
+## OptionalDeps: ForAllIndentsAndPurposes
+## SavedVariables: VFLModuleData, VFLConfig
+VFL.xml
+
+# Kernel
+Kernel.lua
+Primitives.lua
+DispatchTable.lua
+ProfilerStubs.lua
+DataStructures\Error.lua
+NotSoPrimitives.lua
+DataStructures\ConcatBuffer.lua
+DataStructures\IntervalTree.lua
+DataStructures\Literator.lua
+ErrorHandler\Errors.lua
+DataStructures\RadixCodec.lua
+DataStructures\Color.lua
+
+# Core Libraries
+VFL.lua
+Pool.lua
+Time.lua
+
+#Internatonalize
+Internationalize.lua
+
+# UI core
+UI\EscapeHandler.lua
+UI\Core.lua
+UI\Assets.lua
+Metadata\Fonts.lua
+UI\Grid.lua
+
+# Graphics core
+Graphics\Math.lua
+Graphics\Layer.lua
+Graphics\TextureBundle.lua
+
+# Frame classes
+UI\FrameClasses\Frame.lua
+UI\FrameClasses\Button.lua
+UI\FrameClasses\List.lua
+UI\FrameClasses\Edit.lua
+UI\FrameClasses\Scroll.lua
+UI\FrameClasses\Selectable.lua
+UI\FrameClasses\Window.lua
+UI\FrameClasses\WindowFraming.lua
+UI\FrameClasses\TabBar.lua
+UI\FrameClasses\TabBox.lua
+UI\FrameClasses\Dropdown.lua
+UI\FrameClasses\GroupBox.lua
+UI\FrameClasses\ListEditor.lua
+UI\FrameClasses\ColorSwatch.lua
+UI\FrameClasses\TextEditor.lua
+UI\FrameClasses\Text.lua
+UI\FrameClasses\IconPicker.lua
+UI\FrameClasses\DisjointRadioGroup.lua
+UI\FrameClasses\CheckList.lua
+UI\FrameClasses\StatusBarTexture.lua
+UI\FrameClasses\StatusBar.lua
+
+# Higher order objects
+UI\MessageBox.lua
+UI\DragDrop.lua
+UI\PopupMenu.lua
+UI\Shortcuts.lua
+UI\ColorPicker.lua
+UI\FontPicker.lua
+UI\TexturePicker.lua
+UI\BackdropPicker.lua
+UI\SoundPicker.lua
+UI\Resolutions.lua
+
+Orphanage.lua
+
+# Game metadata
+Metadata\Textures.lua
+Metadata\Sounds.lua
+
+Testbed.lua
+
+# INIT MUST LOAD LAST
+VFL_Init.lua
+
